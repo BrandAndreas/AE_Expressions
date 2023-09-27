@@ -1,5 +1,5 @@
 const firstDate = new Date('Juli 25, 1975');
-let secondDate = new Date('August 23, 1975');
+const secondDate = new Date('August 23, 1975');
 
 const dateMoment = linear(time, marker.key(1).time, marker.key(2).time, Date.parse(firstDate), Date.parse(secondDate));
 
