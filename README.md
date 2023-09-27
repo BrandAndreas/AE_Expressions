@@ -1,7 +1,7 @@
 # Expressions for After Effects
 
 ## Position
-- [Random jumping Background](/Position/randomJumpingBackground)
+- [Random jumping Background](/blob/main/Position/RandomJumpingBackground.js)
 
 ## Opacity
 - Blinking
