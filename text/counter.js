@@ -2,4 +2,6 @@
 
 const countFrom = 0;
 const countTo = 100;
-Math.floor(linear(time, marker.key(1).time, marker.key(2).time, countFrom, countTo));
+const decimalPlaces = 2;
+
+linear(time, marker.key(1).time, marker.key(2).time, countFrom, countTo).toFixed(decimalPlaces);
