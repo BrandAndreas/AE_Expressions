@@ -8,5 +8,5 @@
 - [Checkbox](../main/Opacity/checkbox.js)
 
 ## Text
-- Counter
+- [Counter](../main/Text/counter.js)
 - Date of the day
