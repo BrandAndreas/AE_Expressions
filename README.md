@@ -2,3 +2,6 @@
 
 ## Position
 - Random jumping Background
+
+## Opacity
+- Blinking
