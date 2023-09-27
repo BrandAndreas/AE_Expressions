@@ -5,3 +5,8 @@
 
 ## Opacity
 - Blinking
+- Checkbox
+
+## Text
+- Counter
+- Date of the day

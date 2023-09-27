@@ -3,4 +3,4 @@
 // const checkbox = thisComp.layer("LAYERNAME").effect("ADBE Checkbox Control")(1);
 
 const checkbox = effect("ADBE Checkbox Control")(1);
-checkbox == 0 ? 0 : 100;
+checkbox == 0 ? 0 : value;
