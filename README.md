@@ -2,7 +2,7 @@
 
 ## Expressions
 
-### [Position](../main/Expressions/Position))
+### [Position](../main/Expressions/Position)
 - [Random jumping Background](../main/Expressions/Position/randomJumpingBackground.js)
 
 ### [Opacity](../main/Expressions/Opacity)
