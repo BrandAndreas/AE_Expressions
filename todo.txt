@@ -1,0 +1,1 @@
+- Splittext after spaces, reacting on marker
