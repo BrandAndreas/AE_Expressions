@@ -4,6 +4,7 @@
 
 ### [Position](../main/Expressions/Position)
 - [Random jumping Background](../main/Expressions/Position/randomJumpingBackground.js)
+This expression on position moves the layer 3 times per second randomly all about the compsize. It's good for backgrounds in a jumpy look.
 
 ### [Opacity](../main/Expressions/Opacity)
 - [Blinking](../main/Expressions/Opacity/blinking.js)
