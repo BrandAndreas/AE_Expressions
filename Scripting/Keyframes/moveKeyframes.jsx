@@ -1,4 +1,3 @@
-
 function shiftKeyToNewTime(prop, keyToCopyIndex, newTimeSeconds)
 	{
 		var timeOriginalKey = prop.keyTime(keyToCopyIndex);
@@ -73,6 +72,60 @@ function shiftKeyToNewTime(prop, keyToCopyIndex, newTimeSeconds)
 		prop.removeKey(prop.nearestKeyIndex(timeOriginalKey));
 	}
 
-app.beginUndoGroup('Move Keyframes');
+/*
+( function () {
+	//@include aequery.js
 
-app.endUndoGroup();
+	var comp = aeq.getActiveComp();
+
+
+	if ( comp === null ) {
+		return;
+	}
+
+	aeq.createUndoGroup( "Add motionblur", addMotionBlurToCompLayers, [ comp ] );
+
+	function addMotionBlurToCompLayers( comp ) {
+		aeq( "layer:not(motionBlur)", comp ).forEach( function( layer ) {
+			aeq.forEachProperty( layer, function( property ) {
+				if ( property.isTimeVarying ) {
+					addMotionBlur( layer );
+					return false;
+				}
+			} );
+		} );
+	}
+
+	function addMotionBlur( layer ) {
+		var children = aeq.layer.children( layer );
+
+		aeq.forEach( children, addMotionBlur );
+		if ( layer.motionBlur !== undefined && !layer.nullLayer ) {
+			layer.motionBlur = true;
+		}
+	}
+}() );
+*/
+
+
+
+( function () {
+	//@include aequery.js
+
+	var comp = aeq.getActiveComp();
+
+
+	if ( comp === null ) {
+		return;
+	}
+
+	aeq.createUndoGroup( "Move Keys", moveTheKeys, [ comp ] );
+
+	function moveTheKeys( comp ) {
+		var prop = comp.layer(1).position;
+        aeq.prop(1).moveTo(1);
+
+	}
+
+	
+}() );
